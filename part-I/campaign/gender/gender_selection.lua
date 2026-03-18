@@ -54,8 +54,8 @@ function wml_actions.select_gender()
 	end
 
 	local gender_configs = {
-		[1] = { type = "LIUN_Maiden_Cornet", extrarecruit = "LIUN_Maiden_Private", symbol = "🌸" },
-		[2] = { type = "LIUN_Marine_Cornet", extrarecruit = "LIUN_Marine_Private", symbol = "🧿" }
+		[1] = { type = "LIUN_Maiden_Cornet", recruit = "LIUN_Maiden_Private", symbol = "🌸" },
+		[2] = { type = "LIUN_Marine_Cornet", recruit = "LIUN_Marine_Private", symbol = "🧿" }
 	}
 
 	local cfg = gender_configs[gender]
@@ -82,7 +82,7 @@ function wml_actions.select_gender()
 	-- Update Side attributes
 	wesnoth.wml_actions.modify_side {
 		side = side_num,
-		extrarecruit = cfg.extrarecruit
+		recruit = cfg.recruit
 	}
 	
 	wesnoth.add_known_unit(cfg.type)

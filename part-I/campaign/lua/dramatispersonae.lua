@@ -26,8 +26,8 @@ end
 -- of the one another side, e.g. deuteragonistes is on side 1 of protagonistes,
 -- deuterantagonistes is on side 2 of antagonistes , etc.pp.
 -- In your XX_ScenarioStage.cfg you must give proper _X _Y coordinates on the map
--- meaning replacing the 0 0 in SPAWN_DRAMATISPERSONAE _SIDE _ROLE _X _Y 
--- e.g. {SPAWN_DRAMATISPERSONAE 3 chorus 0 0}
+-- meaning replacing the 0 0 in SPAWN_DRAMATISPERSONA _SIDE _ROLE _X _Y 
+-- e.g. {SPAWN_DRAMATISPERSONA 3 chorus 0 0}
 -- or you must provide a keep tile on your map for the function in main.lua
 -- function _G.milestones_ensure_leaders() to place the unit on if no units of that side are present, e.g. {KEEP 3 0 0} for chorus on side 3.
 local dramatispersonae = {

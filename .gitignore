@@ -1,0 +1,31 @@
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore logs
+*.log
+
+# Ignore editor swap/backup files
+*~
+*.swp
+*.bak
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore Wesnoth cache and build outputs (if any)
+cache/
+build/
+
+# Ignore Python cache (if you use Python)
+__pycache__/
+*.pyc
+
+# Ignore other common temp folders
+node_modules/
+
+# Add more patterns as needed for your workflow
